@@ -14,11 +14,11 @@ class CAPTAINEXPORT_PT_panel(bpy.types.Panel):
 
         layout.prop(settings, "export_dir")
         layout.separator()
-        layout.label(text="Модель")
+        layout.label(text="Model")
         layout.prop(settings, "model_name")
         layout.operator("captain_export.model", icon='EXPORT')
         layout.separator()
-        layout.label(text="Анимации")
+        layout.label(text="Animations")
         layout.prop(settings, "export_all")
         layout.prop(settings, "debug_dump")
         layout.operator("captain_export.animations", icon='ACTION')

@@ -6,7 +6,7 @@ from .common import get_armature, get_export_objects, get_filepath_name, save_se
 
 class CAPTAINEXPORT_OT_model(bpy.types.Operator):
     bl_idname = "captain_export.model"
-    bl_label = "Экспорт модели"
+    bl_label = "Export Model"
     bl_description = "Export the selected character model without animation"
 
     def execute(self, context):

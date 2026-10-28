@@ -30,12 +30,12 @@ If Blender's installer does not accept the repository ZIP layout, create a ZIP c
 ## Usage
 
 1. Select the character's **Armature** and make it the active object.
-2. Set **Папка экспорта** to the destination directory.
-3. To export the model, set **Имя модели** and click **Экспорт модели**.
-4. To export the active Action only, leave **Экспорт всех анимаций** disabled and make the required Action active on the armature.
-5. To export all Actions, enable **Экспорт всех анимаций**.
-6. Enable **Сохранять дамп иерархии** only when debugging is needed; a `_blender.txt` file is written beside each animation FBX.
-7. Click **Экспорт анимаций**.
+2. Set **Export folder** to the destination directory.
+3. To export the model, set **Model name** and click **Export model**.
+4. To export the active Action only, leave **Export All Actions** disabled and make the required Action active on the armature.
+5. To export all Actions, enable **Export All Actions**.
+6. Enable **Save Hierarchy Debug Dump** only when debugging is needed; a `_blender.txt` file is written beside each animation FBX.
+7. Click **Export Animations**.
 
 ## Output
 
@@ -60,7 +60,7 @@ captain_fbx_exporter/
 ## Notes and limitations
 
 - This exporter is designed around a Generic-style character rig workflow; it does not configure Unity import settings or create Unity Animator Controllers.
-- In **Экспорт всех анимаций** mode, every Action in `bpy.data.actions` is considered. If the file contains unrelated Actions, they will also be exported.
+- In **Export Animations** mode, every Action in `bpy.data.actions` is considered. If the file contains unrelated Actions, they will also be exported.
 - Action names are sanitized for filenames. Avoid duplicate Action names that sanitize to the same filename, because one export can overwrite another.
 - Test the generated FBX files in the target Unity version before using the add-on in production.
 

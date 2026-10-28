@@ -6,7 +6,7 @@ from .common import get_armature, get_filepath_name, save_selection, restore_sel
 
 class CAPTAINEXPORT_OT_animations(bpy.types.Operator):
     bl_idname = "captain_export.animations"
-    bl_label = "Экспорт анимаций"
+    bl_label = "Export Animations"
     bl_description = "Export the current Action or all Actions as separate FBX files"
 
     def execute(self, context):
